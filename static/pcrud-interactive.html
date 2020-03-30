@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>XHR State</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="pcrud-xhr.js"></script>
+  </head>
+  <body>
+ 
+  <div class="container">
+    <div class="row">
+      <div class="jumbotron jumbotron-fluid" style="background-color: white;">
+        <div class="container">
+          <h1 class="display-4">PCRUD Interactive</h1>
+          <p class="lead">This is a website for testing your interactive JSON server backend</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="counter">Type in the name of the counter below</label>
+          <input name="counter" id="countername" class="form-control" placeholder="counter" />
+          <button onclick="counterCreate()" class="btn btn-primary">Create</button>
+          <button onclick="counterRead()" class="btn btn-primary">Read</button>
+          <button onclick="counterUpdate()" class="btn btn-primary">Update</button>
+          <button onclick="counterDelete()" class="btn btn-primary">Delete</button>
+        </br>
+        </div>
+      </div>
+      
+      <div class="col">
+        <p id="output" style="font-size: xx-large;">
+          <small style="font-size: small;"></small>
+        </p>
+      </div>
+      
+    </div>
+  </body>
+</html>
